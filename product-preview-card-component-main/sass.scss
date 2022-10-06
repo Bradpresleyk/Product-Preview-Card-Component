@@ -1,0 +1,165 @@
+// Imports
+
+// Monserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+// Fraunces
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+// Sass Varibles
+
+// Primary Colors
+$darkCyan:hsl(158, 36%, 37%);
+$cream:hsl(30, 38%, 92%);
+
+// Neutral Colors
+$veryDarkBlue:hsl(212, 21%, 14%);
+$darkGrayishBlue:hsl(228, 12%, 48%);
+$white:hsl(0, 0%, 100%);
+
+// Fonts
+$fontSize:14px;
+$monserrat-font-family:"Montserrat", "sans-serif";
+$fraunces-font-family:"Fraunces", "sans-serif";
+
+
+
+body{
+    background:$cream;
+    box-sizing:border-box;
+}
+
+.container{
+    display:flex;
+    margin:6% 25% 2% 25%;
+    flex-direction:row;
+    width:50vw;
+    height:auto;
+
+}
+
+.imageSection{
+    display:flex;
+    flex-direction:column;
+}
+
+#imageDesktop{
+    height:100%;
+    width:100%;
+    border-radius:2%;
+    
+}
+
+#imageMobile{
+    display:none;
+}
+
+.descriptionSection{
+    background:$white;
+    width:90%;
+    height:100%;
+    border-radius:2%;
+    display:flex;
+    flex-direction:column; 
+    padding:5%;
+
+}
+
+#btn{
+    background:$darkCyan;
+    padding:5%;
+    border-radius:4%;
+    color:$white;
+    margin:3%;
+    font-family:$monserrat-font-family;
+}
+
+#cart{
+    margin-right:4%;
+}
+
+#smallHeader{
+    color:$darkGrayishBlue;
+    font-family:$monserrat-font-family;
+    font-size:0.75rem;
+    letter-spacing:6px;
+    margin-left:4%;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+#mainHeader{
+    font-family:$fraunces-font-family;
+    font-size:2.5rem;
+    line-height:0.95;
+}
+
+#description{
+    font-family:$monserrat-font-family;
+    color:$darkGrayishBlue;
+    margin-top:0;
+    font-size:1rem;
+    
+}
+
+.prices{
+    display:flex;
+    display:row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+#reducedPrice{
+    color:$darkCyan;
+    font-family:$fraunces-font-family;
+    margin-right:5%;
+    font-size:2rem;
+}
+
+#oldPrice{
+    font-family:$fraunces-font-family;
+    margin-right:10%;
+    color:$darkGrayishBlue;
+    font-size:1rem;
+}
+
+// Adding Hover states and interactivity
+
+#btn:hover{
+    background:$veryDarkBlue;
+    cursor:pointer;
+}
+
+
+// Smaller Devices
+
+@media only screen and (max-width:1200px){
+    #imageDesktop{
+        display:none;
+    }
+
+    .container{
+        width:80vw;
+        height:auto;
+        margin:5% 10% 5% 10%;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .descriptionSection{
+        width:auto;
+        height:70%;
+        padding:5%;
+    
+    }
+
+    #imageMobile{
+        display:block;
+        height:100%;
+        width:100%;
+    }
+}
+
+
+
+
