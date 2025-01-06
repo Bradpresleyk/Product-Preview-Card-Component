@@ -15,8 +15,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 50vw;
-  height: auto;
+  width: 50%;
+  height: 100%;
 }
 
 .imageSection {
